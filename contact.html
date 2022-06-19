@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mardi Gras Parade - Contact</title>
+    <link rel="shortcut icon" href="MardiGras_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div class="pageContainer">
+        <nav class="navbar">
+            <img src="MardiGras_Logo.png" alt="Mardi Gras Logo" class="logo">
+            <ul class="nav-links">
+                <!--CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="faqs.html">FAQ's</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Contact Us</h1>
+            <form action="">
+                <h3>For more information please fill out this form or contact us via other chanels offered at the bottom
+                    of
+                    this
+                    page</h3>
+
+                <div class="formControl">
+                    <label for="name">Name:</label>
+                    <input type="text" id="fName" placeholder="Enter Name">
+                    <small>Error Message</small>
+                </div>
+                <div class="formControl">
+                    <label for="name">Last Name:</label>
+                    <input type="text" id="lName" placeholder="Enter Last Name">
+                    <small>Error Message</small>
+                </div>
+                <div class="formControl">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Enter Email">
+                    <small>Error Message</small>
+                </div>
+                <div class="formControl">
+                    <label for="number">Phone Number (optional):</label>
+                    <input type="number" id="phone" placeholder="Enter Phone Number">
+                    <small>Error Message</small>
+                </div>
+                <div class="formControl">
+                    <label for="textArea">Message:</label>
+                    <textarea name="text" id="textArea" placeholder="Enter Message" rows="10"></textarea>
+                    <small>Error Message</small>
+                </div>
+                <input type="submit" value="Send">
+            </form>
+            <br><br>
+
+            <div class="textContactContainer">
+                <h2>Contact us via:</h2>
+                <div class="contactContainer">
+                    <a href="mailto:morenocouncil@nola.gov" target="_blank"><img src="./Media/email1.jpg"
+                            alt="Gmail Logo" class="contactLogo" style="width: 70px;"></a> &nbsp;&nbsp;&nbsp;
+                    <a href="https://www.facebook.com/MardiGrasNewOrleans" target="_blank"><img
+                            src="./Media/facebook.jpg" class="contactLogo" style="width:50px;" alt="Facebook Logo"></a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="https://twitter.com/MardiGrasNOLA" target="_blank"><img src="./Media/twitter.png"
+                            class="contactLogo" style="width:50px;" alt="Twitter Logo"></a> &nbsp;&nbsp;&nbsp;
+                    <a href="https://www.tripadvisor.com/Profile/MardiGrasNOLA?fid=e620443f-33c5-49ab-9f3e-3d0f5a20af57"
+                        class="contactLogo" target="_blank"><img src="./Media/tripadvisor.png" style="width:50px;"
+                            alt="Tripadvisor Logo"></a>
+                    &nbsp;&nbsp;&nbsp;
+                    <div><img src="./Media/phone.jpg" style="width:30px;" alt="Phone Logo"><br> (504)658-1060</div>
+                </div>
+            </div>
+            <br>
+        </main>
+
+        <footer>
+            <div class="footer"> &#169; 2022 Devorah Dayan's Website
+            </div>
+        </footer>
+    </div>
+    <script src="contact.js"></script>
+</body>
+
+</html>

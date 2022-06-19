@@ -1,0 +1,163 @@
+@import "setup";
+@import "mixin";
+@import "headerFooter";
+
+.pageContainer {
+    background-image: url("./Media/hd-wallpaper-1867616_1920.jpg");
+}
+
+h1 {
+    font-family: $hFont1;
+    color: $colorGreen;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.mgHistory {
+    background: linear-gradient(120deg, rgba(242, 204, 15, .6), rgba(140, 191, 63, .6)), rgba(255, 255, 255, .8);
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mgTraditions {
+    background: linear-gradient(120deg, rgba(148, 83, 166, .6), rgb(242, 204, 15, .6)), rgba(255, 255, 255, .8);
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mgColors {
+    background: linear-gradient(120deg, rgba(148, 83, 166, .6), rgba(140, 191, 63, .6)), rgba(255, 255, 255, .8);
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mgMayor {
+    background: linear-gradient(120deg, rgba(242, 84, 44, .6), rgb(242, 204, 15, .6)), rgba(255, 255, 255, .8);
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@include tablet {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@include mobile {
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 0.5rem;
+    }
+
+    div.gridAboutButton {
+        display: block;
+    }
+
+    div.mayorContainer {
+        display: block;
+    }
+
+    div img.mayorPic {
+        display: block;
+        margin: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+h3 {
+    font-family: $hFont1;
+    color: $colorPurple;
+    text-shadow: .5px .5px black;
+    font-size: 20pt;
+    text-align: left;
+    padding: 5px 50px;
+}
+
+p {
+    font-family: $textFont;
+    color: $colorDark;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 10px 50px;
+}
+
+hr.green {
+    border: 2px solid $colorGreen;
+    border-radius: 5px 5px 0 0;
+    width: 90vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr.yellow {
+    border: 2px solid $colorYellow;
+    width: 90vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr.purple {
+    border: 2px solid $colorPurple;
+    border-radius: 0 0 5px 5px;
+    width: 90vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutButton {
+    font-family: $textFont;
+    color: $colorDark;
+    text-align: center;
+    background-color: $colorYellow;
+    border: 1px solid $colorDark;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.gridAboutButton {
+    margin: 0 30px 30px 30px;
+    display: grid;
+    grid-template-columns: 3fr .5fr 3fr;
+}
+
+.arrowIcon {
+    display: block;
+    margin-right: 0vw;
+    margin-left: auto;
+}
+
+img.mayorPic {
+    border-radius: 50%;
+    height: 315px;
+    padding: 10px;
+}
+
+.mayorContainer {
+    display: flex;
+}
+
+div.picArrow {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+}

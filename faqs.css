@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* navbar css */
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 20px;
+  background-color: #F2CC0F;
+  font-family: "Pattaya";
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar .nav-links {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav-links a {
+  color: #9453A6;
+  text-decoration: none;
+}
+
+.logo {
+  width: 85px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu li:hover {
+  background-color: #9453A6;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.menu li:hover a {
+  color: #F2F2F2;
+}
+
+.menu li {
+  list-style: none;
+  padding: 5px 14px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #ecd55d;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:active {
+    display: inline-block;
+    background-color: #9453A6;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .menu li:active a {
+    color: #F2F2F2;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    color: #9453A6;
+  }
+  .logo {
+    width: 75px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #ecd55d;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:active {
+    display: inline-block;
+    background-color: #9453A6;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .menu li:active a {
+    color: #F2F2F2;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    color: #9453A6;
+  }
+  .logo {
+    width: 65px;
+  }
+}
+
+.footer {
+  background-color: #e8e8e8;
+  text-align: center;
+  font-family: "Roboto", "sans-serif";
+  line-height: 2;
+  width: 100%;
+  display: block;
+  left: 0;
+  position: absolute;
+}
+
+.pageContainer {
+  background-image: url("./Media/2_pexels-sharon-mccutcheon-1191710.jpg");
+  width: 100vw;
+}
+
+h1 {
+  font-family: "Pattaya";
+  color: #8CBF3F;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+/* accordion */
+.wholeAccordion {
+  margin: 20px 20px 0px 20px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 20px;
+  width: 80vw;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: "Roboto", "sans-serif";
+  font-size: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.active,
+.accordion:hover {
+  color: #F2F2F2;
+  background-color: #9453A6;
+}
+
+.panel {
+  padding: 10px 25px;
+  display: none;
+  background-color: white;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
+  font-family: "Roboto", "sans-serif";
+  font-size: 14px;
+}
+/*# sourceMappingURL=faqs.css.map */

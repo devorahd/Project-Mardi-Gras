@@ -1,0 +1,67 @@
+@import "setup";
+@import "mixin";
+@import "headerFooter";
+@import "sliderCards";
+
+
+.topPageContainer {
+    background-color: beige;
+}
+
+.middlePageContainer {
+    background-image: url("./Media/2hush-naidoo-jade-photography-_Pyzu4BgTa8-unsplash.jpg");
+    opacity: .8;
+}
+
+.bottomPageContainer {
+    background-color: beige;
+}
+
+
+h1 {
+    font-family: $hFont1;
+    color: $colorGreen;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.middlePageContainer p {
+    font-family: $textFont;
+    color: $colorDark;
+    width: 80vw;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, .7);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@include tablet {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@include mobile {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+
+h3 {
+    font-family: $hFont1;
+    color: $colorPurple;
+    font-size: 20pt;
+    text-align: left;
+    padding: 5px 30px;
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(255, 255, 255, .7);
+}

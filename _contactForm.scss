@@ -1,0 +1,117 @@
+h3 {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 20px;
+    color: $colorLight;
+    text-shadow: 1px 1px $colorDark;
+    margin: 0 25px;
+}
+
+:root {
+    --success: #2c7;
+    --error: #e43;
+}
+
+.formControl {
+    color: $colorLight;
+    text-shadow: 1px 1px $colorDark;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.formControl label {
+    display: block;
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: $textFont;
+}
+
+.formControl input {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    width: 80vw;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: $textFont;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#textArea {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    width: 80vw;
+    padding: 10px;
+    font-family: $textFont;
+    font-size: 1.1rem;
+    margin-right: auto;
+    margin-left: auto;
+    resize: none;
+
+}
+
+.formControl ::placeholder {
+    opacity: 0;
+}
+
+.formControl input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.formControl.success input {
+    border-color: var(--success);
+}
+
+.formControl.error input {
+    border-color: var(--error);
+}
+
+.formControl small {
+    color: var(--error);
+    visibility: hidden;
+}
+
+.formControl.error small {
+    visibility: visible;
+    font-size: medium;
+    margin: 50px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, .8);
+    border: 1px solid #777;
+    text-shadow: none;
+}
+
+input[type=submit] {
+    border: 2px solid #5f832a;
+    background-color: $colorGreen;
+    border-radius: 4px;
+    color: $colorDark;
+    font-family: $textFont;
+    display: block;
+    font-size: 1rem;
+    margin-top: 20px;
+    padding: 10px;
+    width: 60vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+@include mobile {
+    .formControl label {
+        display: none;
+    }
+
+    .formControl ::placeholder {
+        opacity: .7;
+    }
+}

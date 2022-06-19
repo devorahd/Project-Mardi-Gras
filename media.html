@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <title>Mardi Gras Parade - Media</title>
+    <link rel="shortcut icon" href="MardiGras_Logo.png" type="image/x-icon">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script>
+        !window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+    </script>
+    <script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+    <link rel="stylesheet" href="styleFancybox.css" />
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <div class="pageContainer">
+        <nav class="navbar">
+            <img src="MardiGras_Logo.png" alt="Mardi Gras Logo" class="logo">
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- NAVIGATION MENUS -->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="faqs.html">FAQ's</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Gallery</h1>
+
+            <div id="content">
+                <p>
+                    <!-- <h4>Pictures</h4> -->
+                    <!--   Different animations<br /> -->
+                    <a id="example1" href="./Media/pexels-hitesh-choudhary_b.jpg"><img alt="example1"
+                            src="./Media/pexels-hitesh-choudhary_square.jpg" /></a>
+
+                    <a id="example2" href="./Media/kamakshi-subramani_b.jpg"><img alt="example2"
+                            src="./Media/kamakshi-subramani_square.jpg" /></a>
+
+                    <a id="example3" href="./Media/micky-white-J8ix5QyOKxE-unsplash_b.jpg"><img alt="example3"
+                            src="./Media/micky-white-J8ix5QyOKxE-unsplash_square.jpg" /></a>
+
+                    <a id="example3" href="./Media/mikhail-nilov_b.jpg"><img alt="example3"
+                            src="./Media/mikhail-nilov_square.jpg" /></a>
+
+                    <a id="example3" href="./Media/pexels-genaro-servín_b.jpg"><img alt="example3"
+                            src="./Media/pexels-genaro-servín_square.jpg" /></a>
+
+                    <a id="example3" href="./Media/pexels-helena_b.jpg"><img alt="example3"
+                            src="./Media/pexels-helena_square.jpg" /></a>
+
+                    <a id="example3" href="./Media/thomas-park_b.jpg"><img alt="example3"
+                            src="./Media/thomas-park_square.jpg" /></a>
+
+                    <a id="example3" href="./Media/pexels-marius-nacu_b.jpg"><img alt="example3"
+                            src="./Media/pexels-marius-nacu_square.jpg" /></a>
+
+                    <a id="example3" href="./Media/pexels-mikhail-nilov_b.jpg"><img alt="example3"
+                            src="./Media/pexels-mikhail-nilov_square.jpg" /></a>
+
+                    <a id="example3" href="./Media/pexels-quang-nguyen-vinh_b.jpg"><img alt="example3"
+                            src="./Media/pexels-quang-nguyen-vinh_square.jpg" /></a>
+
+                    <a id="example4" href="./Media/pexels-sahil-prajapati_b.jpg"><img class="last" alt="example4"
+                            src="./Media/pexels-sahil-prajapati_square.jpg" /></a>
+                    <br>
+                    <iframe width="280" height="157.5" src="https://www.youtube.com/embed/0ucYzvlMFZE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                    <iframe width="280" height="157.5" src="https://www.youtube.com/embed/C8mJ2C2cbd0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                    <iframe width="280" height="157.5" src="https://www.youtube.com/embed/VM9ODg03srU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer"> &#169; 2022 Devorah Dayan's Website
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        /* Examples - images */
+        $(document).ready(function () {
+            $("a#example1").fancybox();
+
+            $("a#example2").fancybox({
+                'overlayShow': false,
+                'transitionIn': 'elastic',
+                'transitionOut': 'elastic'
+            });
+
+            $("a#example3").fancybox({
+                'transitionIn': 'none',
+                'transitionOut': 'none'
+            });
+
+            $("a#example4").fancybox({
+                'opacity': true,
+                'overlayShow': false,
+                'transitionIn': 'elastic',
+                'transitionOut': 'none'
+            });
+
+        });
+    </script>
+</body>
+
+</html>

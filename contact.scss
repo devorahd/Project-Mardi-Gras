@@ -1,0 +1,61 @@
+@import "setup";
+@import "mixin";
+@import "headerFooter";
+@import "contactForm";
+
+.pageContainer {
+    background-image: url("./Media/pexels-sharon-mccutcheon-1566909.jpg");
+}
+
+h1 {
+    font-family: $hFont1;
+    color: $colorGreen;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+
+@include tablet {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@include mobile {
+    h1 {
+        font-size: 30px;
+    }
+
+    main div.contactContainer {
+        padding: 10px;
+        display: block;
+    }
+}
+
+div.contactContainer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px 65px;
+}
+
+
+.contactLogo:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.textContactContainer {
+    background-color: rgba(255, 255, 255, .8);
+    width: 100vw;
+}
+
+h2 {
+    color: $colorDark;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 20px;
+}

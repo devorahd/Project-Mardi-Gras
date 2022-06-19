@@ -1,0 +1,322 @@
+/* slider */
+body {
+    font-family: $textFont;
+    margin: 0
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+.firstPic {
+    display: none;
+}
+
+.slideshow-container {
+    max-width: 80vw;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: $colorDark;
+    font-size: 1rem;
+    padding: 0px 8px 8px 8px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: $colorLight;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* sponsor Cards */
+.sponsors {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 18px;
+}
+
+.cardContainer {
+    padding-top: 20px;
+    transform: scale(1);
+}
+
+.sponsors .cardContainer:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.cardContainer img {
+    width: 230px;
+    height: 130px;
+    padding: 15px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#button2 img,
+#button4 img,
+#button7 img {
+    width: 200px;
+}
+
+#button6 img {
+    width: 150px;
+}
+
+.cardContainer h4 {
+    text-align: center;
+    color: $colorYellow;
+    text-shadow: .5px .5px black;
+    font-family: $textFont;
+    font-size: 16pt;
+}
+
+
+@include tablet {
+
+    .sponsors {
+        display: block;
+    }
+
+    .cardContainer {
+        padding: 15px;
+    }
+}
+
+@include mobile {
+
+    .sponsors {
+        display: block;
+    }
+
+    .cardContainer {
+        padding: 15px;
+    }
+
+    div.popupWalkons,
+    div.popupSheraton,
+    div.popupAce,
+    div.popupRitzCarlton,
+    div.popupPremiumParking,
+    div.popupChildrenMuseum,
+    div.popupMuseumOfDeath,
+    div.popupHauntedMuseum {
+        width: 80%;
+    }
+
+    .slideshow-container {
+        display: none;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    .firstPic {
+        display: block;
+        max-width: 80vw;
+        position: relative;
+        margin: auto;
+    }
+}
+
+/* popup cards */
+.wrapper1,
+.wrapper2,
+.wrapper3,
+.wrapper4,
+.wrapper5,
+.wrapper6,
+.wrapper7,
+.wrapper8 {
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 2
+}
+
+.popupWalkons,
+.popupSheraton,
+.popupAce,
+.popupRitzCarlton,
+.popupPremiumParking,
+.popupChildrenMuseum,
+.popupMuseumOfDeath,
+.popupHauntedMuseum {
+    font-family: $textFont;
+    color: $colorDark;
+    text-align: center;
+    width: 400px;
+    margin: 2% auto;
+    background-color: $colorLight;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 4px 8px #666;
+}
+
+h2 {
+    color: #aa182c;
+    font-family: $hFont1;
+    font-size: 20pt;
+    text-shadow: .5px .5px black;
+}
+
+.content p {
+    font-family: $textFont;
+    color: $colorDark;
+    width: 100%;
+    font-size: 1rem;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+
+a.map {
+    background-color: $colorYellow;
+    color: $colorDark;
+    border: 1px solid $colorDark;
+    font-size: .8rem;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+a.website {
+    background-color: $colorGreen;
+    color: $colorDark;
+    font-size: .8rem;
+    border: 1px solid $colorDark;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.popupWalkons img,
+.popupSheraton img,
+.popupAce img,
+.popupRitzCarlton img,
+.popupPremiumParking img,
+.popupChildrenMuseum img,
+.popupMuseumOfDeath img,
+.popupHauntedMuseum img {
+    width: 200px;
+}
+
+
+.close1,
+.close2,
+.close3,
+.close4,
+.close5,
+.close6,
+.close7,
+.close8 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.popupSheraton h2 {
+    color: #6c635f;
+}
+
+.popupAce h2,
+.popupRitzCarlton h2 {
+    color: #000;
+}
+
+.popupPremiumParking h2 {
+    color: #d21016
+}
+
+.popupChildrenMuseum h2 {
+    color: #00af9a
+}
+
+.popupMuseumOfDeath h2,
+.popupHauntedMuseum h2 {
+    color: #970d0a;
+}

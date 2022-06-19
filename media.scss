@@ -1,0 +1,44 @@
+@import "setup";
+@import "mixin";
+@import "headerFooter";
+@import "styleFancybox";
+
+.pageContainer {
+    background: linear-gradient(to right top, #ebd80a, #9453A6);
+}
+
+h1 {
+    font-family: $hFont1;
+    color: $colorGreen;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+@include tablet {
+    h1 {
+        font-size: 50px;
+    }
+
+}
+
+@include mobile {
+    h1 {
+        font-size: 30px;
+    }
+
+}
+
+h4 {
+    font-family: $textFont;
+    color: $colorDark;
+    font-size: 14pt;
+}
+
+
+iframe {
+    padding: 10px;
+
+}
